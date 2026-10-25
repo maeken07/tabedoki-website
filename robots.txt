@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://maeken07.github.io/tabedoki-website/sitemap.xml
