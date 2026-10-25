@@ -8,7 +8,7 @@ h1, h2, h3, h4, p, figure { margin: 0; }
 h1, h2, h3, h4 { font-feature-settings: "palt"; }
 h2 { font-size: clamp(30px, 3.3vw, 43px); line-height: 1.6; letter-spacing: -.045em; font-weight: 700; }
 h3 { line-height: 1.6; }
-a { color: inherit; text-decoration: none; }
+a:not([href="https://developer.yahoo.co.jp/sitemap/"]) { color: inherit; text-decoration: none; }
 button { font: inherit; color: inherit; touch-action: manipulation; }
 button, a, summary { -webkit-tap-highlight-color: transparent; }
 button:not(:disabled), summary { cursor: pointer; }
@@ -201,6 +201,7 @@ h1 > span::after { content: ""; position: absolute; height: 5px; width: 52px; bo
 .footer-bottom { grid-column: 1/-1; display: flex; justify-content: space-between; align-items: center; gap: 20px; border-top: 1px solid #d4decf; padding-top: 15px; font-size: 10px; color: var(--muted); }
 .footer-bottom > div { display: flex; flex-wrap: wrap; gap: 0 24px; }
 .footer-bottom small { font-size: 10px; flex-shrink: 0; }
+.yahoo-attribution { grid-column: 1/-1; padding-block: 15px; }
 .reveal-ready [data-reveal].is-pending { opacity: 0; transform: translateY(22px); }
 .reveal-ready [data-reveal] { transition: opacity .7s ease, transform .7s cubic-bezier(.2,.65,.3,1); }
 .legal-page { background: var(--paper); }
